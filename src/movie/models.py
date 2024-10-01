@@ -1,8 +1,6 @@
-from sqlalchemy import MetaData, String, Integer, Table, Column, ForeignKey, DateTime, event
+from sqlalchemy import String, Integer, Table, Column, ForeignKey, DateTime
 
-from src.utils import auto_generate_slug
-
-metadata = MetaData()
+from src.database import metadata
 
 movie_director_association = Table(
     'movie_director',
